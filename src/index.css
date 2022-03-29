@@ -12,9 +12,6 @@ code {
     monospace;
 }
 
-.titulo {
-  text-align:left;
-}
 
 nav {
   grid-area: nav;
@@ -24,13 +21,20 @@ nav {
   position: center;
   background-color: rgb(255, 236, 249);
   width: 100%;
-  padding: 10px; }
-  nav ul li {
-    list-style-type: none;
-    padding: 5px;
-    margin: 10px;
-    text-decoration: none;
-    color: black; }
+  padding: 10px;
+}
+nav ul li {
+  list-style-type: none;
+  padding: 5px;
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  align-items: center;
+  justify-content: space-around;
+  position: center;
+    
+}
 
 li:hover {
   transform: scale(1.2);

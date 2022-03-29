@@ -1,31 +1,39 @@
-const navBar = () => {
+import imagen from '../public/favicon-16x16.png'
+
+const NavBar = () => {
     return (
         <nav>
-            <ul class="navegador">         
+            
+            <ul className="navegador">    
+                <li>
+                     <h2> MARINO VARETA </h2>
+                     <div> 
+                         <img src={imagen} />
+                     </div>
+                </li>
                 <li>
                      <span> Home </span>
                 </li>
                 
                 <li>
-                   <span style="color:black;  text-decoration: none;"> Servicios </span>
+                   <span> Servicios </span>
                 </li>
                 
                 <li>
-                   <span style="color:black; text-decoration: none;"> Productos </span>
+                   <span> Productos </span>
                 </li>
                 
                 <li>
-                    <span style="color:black;text-decoration: none"> Contacto</span>
+                    <span> Contacto</span>
                 </li>
                 
                 <li>
-                    <span style="color:black; text-decoration: none"> Quienes somos</span>
+                    <span> Quienes somos</span>
                 </li>
+                
             </ul>
         </nav>
-
-
     );
 }
 
-export default navBar;
+export default NavBar;
